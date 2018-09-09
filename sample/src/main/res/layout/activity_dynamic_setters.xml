@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
   <LinearLayout
       android:id="@+id/parent"
@@ -14,81 +13,78 @@
       android:paddingLeft="@dimen/activity_horizontal_margin"
       android:paddingRight="@dimen/activity_horizontal_margin"
       android:paddingTop="@dimen/activity_vertical_margin"
-      tools:context=".BasicActivity"
-      >
+      tools:context=".BasicActivity">
+    <Button
+        android:id="@+id/select_pager_btn"
+        android:layout_width="wrap_content"
+        android:text="Selected-Pager"
+        android:onClick="setSelectedPager"
+        android:layout_height="wrap_content" />
 
     <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
       <Button
           android:id="@+id/button_other_dates"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Other Dates"
-          />
+          android:text="Other Dates" />
 
       <CheckBox
           android:id="@+id/check_text_appearance"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Use Large Text"
-          />
+          android:text="Use Large Text" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
       <Button
           android:id="@+id/button_months"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Month Mode"
-          />
+          android:text="Month Mode" />
+
       <Button
           android:id="@+id/button_weeks"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Week mode"
-          />
+          android:text="Week mode" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
       <Button
           android:id="@+id/button_selection_mode"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Selection Mode"
-          />
+          android:text="Selection Mode" />
 
       <Button
           android:id="@+id/button_toggle_topbar"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Toggle Topbar"
-          />
+          android:text="Toggle Topbar" />
 
     </LinearLayout>
 
@@ -96,101 +92,88 @@
         android:id="@+id/button_change_orientation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Change animation orientation"
-        />
+        android:text="Change animation orientation" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
       <Button
           android:id="@+id/button_previous"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Previous"
-          />
+          android:text="Previous" />
 
       <Button
           android:id="@+id/button_next"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Next"
-          />
+          android:text="Next" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
       <Button
           android:id="@+id/button_min_date"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Set Min Date"
-          />
+          android:text="Set Min Date" />
 
       <Button
           android:id="@+id/button_max_date"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Set Max Date"
-          />
+          android:text="Set Max Date" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
       <Button
           android:id="@+id/button_selected_date"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Set Selected Date"
-          />
+          android:text="Set Selected Date" />
 
       <Button
           android:id="@+id/button_set_first_day"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Random First Day"
-          />
+          android:text="Random First Day" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
       <Button
           android:id="@+id/button_set_tile_size"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Set Tile Size"
-          />
+          android:text="Set Tile Size" />
 
       <Button
           android:id="@+id/button_set_colors"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Random Colors"
-          />
+          android:text="Random Colors" />
 
     </LinearLayout>
 
@@ -198,22 +181,19 @@
         android:id="@+id/button_set_width_height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Set Width and Height"
-        />
+        android:text="Set Width and Height" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
       <Button
           android:id="@+id/button_clear_selection"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="1"
-          android:text="Clear Selection"
-          />
+          android:text="Clear Selection" />
 
       <CheckBox
           android:id="@+id/check_page_enabled"
@@ -221,16 +201,14 @@
           android:layout_height="wrap_content"
           android:layout_weight="1"
           android:checked="true"
-          android:text="Paging Enabled"
-          />
+          android:text="Paging Enabled" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
       <CheckBox
           android:id="@+id/animate_mode_transition"
@@ -238,30 +216,29 @@
           android:layout_height="wrap_content"
           android:checked="true"
           android:padding="8dp"
-          android:text="Animate Month/Week mode transition (KitKat and above)"
-          />
+          android:text="Animate Month/Week mode transition (KitKat and above)" />
+
       <CheckBox
           android:id="@+id/show_week_days"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:checked="true"
           android:padding="8dp"
-          android:text="Show week days"
-          />
+          android:text="Show week days" />
+
       <CheckBox
           android:id="@+id/enable_save_current_position"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="8dp"
-          android:text="Enable save current position"
-          />
+          android:text="Enable save current position" />
+
       <CheckBox
           android:id="@+id/dynamic_height_enabled"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:padding="8dp"
-          android:text="Dynamic Height Enabled"
-          />
+          android:text="Dynamic Height Enabled" />
 
     </LinearLayout>
 
